@@ -1,6 +1,6 @@
 # Library Management System
 
-A comprehensive Java application demonstrating advanced object-oriented programming principles, design patterns, and best practices for the TAK24 course.
+A comprehensive Java application demonstrating advanced object-oriented programming principles, design patterns, and best practices.
 
 ## 🎯 Project Overview
 
