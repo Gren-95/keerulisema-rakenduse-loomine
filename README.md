@@ -90,26 +90,14 @@ src/main/java/ee/tak24/library/
 
 ### Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd keerulisema-rakenduse-loomine
-   ```
-
-2. **Build the project:**
+1. **Build the project:**
    ```bash
    mvn clean compile
    ```
 
-3. **Run the application:**
+2. **Run the application:**
    ```bash
    mvn exec:java -Dexec.mainClass="ee.tak24.library.LibraryApplication"
-   ```
-
-   Or run the JAR file:
-   ```bash
-   mvn clean package
-   java -jar target/library-management-system-1.0.0.jar
    ```
 
 ### Running Tests
