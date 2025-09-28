@@ -31,6 +31,7 @@ ee/tak24/library/observer/LibraryEvent.class
 ee/tak24/library/exception/BookNotFoundException.class
 ee/tak24/library/persistence/JsonLibraryRepository$3.class
 ee/tak24/library/service/LibraryService.class
+ee/tak24/library/ui/LibraryGUI.class
 ee/tak24/library/strategy/NotificationService.class
 ee/tak24/library/command/BorrowBookCommand.class
 ee/tak24/library/model/Member.class

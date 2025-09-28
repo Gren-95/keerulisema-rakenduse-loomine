@@ -29,6 +29,7 @@
 /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/exception/MemberNotFoundException.java
 /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/model/BookCategory.java
 /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/observer/LibraryEventPublisher.java
+/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/ui/LibraryGUI.java
 /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/observer/LibraryEventListener.java
 /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/repository/InMemoryLibraryRepository.java
 /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/src/main/java/ee/tak24/library/command/CommandInvoker.java

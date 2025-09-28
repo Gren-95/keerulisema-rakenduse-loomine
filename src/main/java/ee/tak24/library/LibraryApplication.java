@@ -28,28 +28,41 @@ public class LibraryApplication {
      * - Proper exception handling
      * - Clean dependency injection
      * - Logging for debugging and monitoring
+     * - Supports both CLI and GUI modes
      * 
-     * @param args command line arguments (currently unused)
+     * @param args command line arguments
+     *             - No arguments: starts CLI interface
+     *             - --gui: starts GUI interface
      */
     public static void main(String[] args) {
         logger.info("Starting Library Management System...");
         
         try {
-            // Initialize dependencies using Factory pattern
-            LibraryFactory factory = new LibraryFactory();
+            // Check for GUI mode
+            boolean guiMode = args.length > 0 && "--gui".equals(args[0]);
             
-            // Create repository with JSON persistence
-            var repository = new JsonLibraryRepository();
-            
-            // Create service layer with dependency injection
-            LibraryService libraryService = new LibraryServiceImpl(repository);
-            
-            // Initialize with sample data
-            factory.initializeWithSampleData(libraryService);
-            
-            // Create and start CLI interface
-            LibraryCLI cli = new LibraryCLI(libraryService);
-            cli.start();
+            if (guiMode) {
+                logger.info("Starting GUI mode...");
+                // Launch JavaFX GUI
+                ee.tak24.library.ui.LibraryGUI.main(args);
+            } else {
+                logger.info("Starting CLI mode...");
+                // Initialize dependencies using Factory pattern
+                LibraryFactory factory = new LibraryFactory();
+                
+                // Create repository with JSON persistence
+                var repository = new JsonLibraryRepository();
+                
+                // Create service layer with dependency injection
+                LibraryService libraryService = new LibraryServiceImpl(repository);
+                
+                // Initialize with sample data
+                factory.initializeWithSampleData(libraryService);
+                
+                // Create and start CLI interface
+                LibraryCLI cli = new LibraryCLI(libraryService);
+                cli.start();
+            }
             
         } catch (Exception e) {
             logger.error("Failed to start Library Management System", e);

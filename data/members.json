@@ -1,27 +1,5 @@
 [ {
-  "id" : "MEM_1759056911540_3",
-  "firstName" : "efe",
-  "lastName" : "efe",
-  "email" : "efe@gmail.com",
-  "dateOfBirth" : [ 2000, 2, 1 ],
-  "address" : {
-    "street" : "123",
-    "city" : "123",
-    "postalCode" : "123",
-    "country" : "321",
-    "fullAddress" : "123, 123 123, 321"
-  },
-  "membershipDate" : [ 2025, 9, 28 ],
-  "borrowingHistory" : [ ],
-  "membershipType" : "BASIC",
-  "currentBorrowedCount" : 0,
-  "membershipDuration" : 0,
-  "active" : true,
-  "role" : "Member",
-  "age" : 25,
-  "fullName" : "efe efe"
-}, {
-  "id" : "MEM_1759056856868_2",
+  "id" : "MEM_1759062828133_2",
   "firstName" : "Bob",
   "lastName" : "Smith",
   "email" : "bob.smith@example.com",
@@ -38,12 +16,12 @@
   "membershipType" : "STUDENT",
   "currentBorrowedCount" : 0,
   "membershipDuration" : 0,
-  "active" : false,
+  "active" : true,
   "role" : "Member",
-  "age" : 33,
-  "fullName" : "Bob Smith"
+  "fullName" : "Bob Smith",
+  "age" : 33
 }, {
-  "id" : "MEM_1759056856856_1",
+  "id" : "MEM_1759062828118_1",
   "firstName" : "Alice",
   "lastName" : "Johnson",
   "email" : "alice.johnson@example.com",
@@ -62,6 +40,6 @@
   "membershipDuration" : 0,
   "active" : true,
   "role" : "Member",
-  "age" : 40,
-  "fullName" : "Alice Johnson"
+  "fullName" : "Alice Johnson",
+  "age" : 40
 } ]
