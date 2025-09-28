@@ -1,4 +1,16 @@
 [ {
+  "isbn" : "111",
+  "title" : "asdasd",
+  "author" : "123",
+  "publisher" : "123",
+  "publicationDate" : [ 2000, 1, 1 ],
+  "category" : "FICTION",
+  "status" : "AVAILABLE",
+  "totalCopies" : 1,
+  "availableCopies" : 1,
+  "age" : 25,
+  "available" : true
+}, {
   "isbn" : "978-0-123456-79-6",
   "title" : "Data Structures and Algorithms",
   "author" : "Jane Writer",

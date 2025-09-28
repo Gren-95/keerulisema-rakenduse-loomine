@@ -1,5 +1,5 @@
 [ {
-  "id" : "MEM_1759062967451_1",
+  "id" : "MEM_1759063034177_1",
   "firstName" : "Alice",
   "lastName" : "Johnson",
   "email" : "alice.johnson@example.com",
@@ -21,7 +21,29 @@
   "age" : 40,
   "fullName" : "Alice Johnson"
 }, {
-  "id" : "MEM_1759062967461_2",
+  "id" : "MEM_1759063058919_3",
+  "firstName" : "asd",
+  "lastName" : "asd",
+  "email" : "asd@asd.asd",
+  "dateOfBirth" : [ 2000, 1, 1 ],
+  "address" : {
+    "street" : "aaa",
+    "city" : "aaa",
+    "postalCode" : "aaa",
+    "country" : "aaa",
+    "fullAddress" : "aaa, aaa aaa, aaa"
+  },
+  "membershipDate" : [ 2025, 9, 28 ],
+  "borrowingHistory" : [ ],
+  "membershipType" : "BASIC",
+  "currentBorrowedCount" : 0,
+  "membershipDuration" : 0,
+  "active" : true,
+  "role" : "Member",
+  "age" : 25,
+  "fullName" : "asd asd"
+}, {
+  "id" : "MEM_1759063034193_2",
   "firstName" : "Bob",
   "lastName" : "Smith",
   "email" : "bob.smith@example.com",
