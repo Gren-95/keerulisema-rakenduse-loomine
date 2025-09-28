@@ -82,17 +82,21 @@ public class LibraryGUI extends Application {
         primaryStage.setHeight(700);
         
         TabPane tabPane = new TabPane();
+        tabPane.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE); // Disable all tab closing
         
         // Member Management Tab
         Tab memberTab = createMemberManagementTab();
+        memberTab.setClosable(false); // Prevent tab removal
         tabPane.getTabs().add(memberTab);
         
         // Book Management Tab
         Tab bookTab = createBookManagementTab();
+        bookTab.setClosable(false); // Prevent tab removal
         tabPane.getTabs().add(bookTab);
         
         // Statistics Tab
         Tab statsTab = createStatisticsTab();
+        statsTab.setClosable(false); // Prevent tab removal
         tabPane.getTabs().add(statsTab);
         
         Scene scene = new Scene(tabPane);
