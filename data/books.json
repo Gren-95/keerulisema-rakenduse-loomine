@@ -1,0 +1,37 @@
+[ {
+  "isbn" : "978-0-123456-79-6",
+  "title" : "Data Structures and Algorithms",
+  "author" : "Jane Writer",
+  "publisher" : "Academic Press",
+  "publicationDate" : [ 2022, 9, 10 ],
+  "category" : "TEXTBOOK",
+  "status" : "AVAILABLE",
+  "totalCopies" : 3,
+  "availableCopies" : 3,
+  "age" : 3,
+  "available" : true
+}, {
+  "isbn" : "978-0-123456-78-9",
+  "title" : "Java Programming Guide",
+  "author" : "John Author",
+  "publisher" : "Tech Publishers",
+  "publicationDate" : [ 2023, 1, 15 ],
+  "category" : "TECHNOLOGY",
+  "status" : "AVAILABLE",
+  "totalCopies" : 5,
+  "availableCopies" : 5,
+  "age" : 2,
+  "available" : true
+}, {
+  "isbn" : "978-0-123456-80-2",
+  "title" : "The Great Adventure",
+  "author" : "Fiction Author",
+  "publisher" : "Story Books",
+  "publicationDate" : [ 2021, 5, 20 ],
+  "category" : "FICTION",
+  "status" : "AVAILABLE",
+  "totalCopies" : 2,
+  "availableCopies" : 2,
+  "age" : 4,
+  "available" : true
+} ]

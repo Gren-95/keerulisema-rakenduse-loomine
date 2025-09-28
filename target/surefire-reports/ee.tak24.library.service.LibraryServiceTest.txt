@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ee.tak24.library.service.LibraryServiceTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.863 s -- in ee.tak24.library.service.LibraryServiceTest

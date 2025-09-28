@@ -1,0 +1,67 @@
+[ {
+  "id" : "MEM_1759056911540_3",
+  "firstName" : "efe",
+  "lastName" : "efe",
+  "email" : "efe@gmail.com",
+  "dateOfBirth" : [ 2000, 2, 1 ],
+  "address" : {
+    "street" : "123",
+    "city" : "123",
+    "postalCode" : "123",
+    "country" : "321",
+    "fullAddress" : "123, 123 123, 321"
+  },
+  "membershipDate" : [ 2025, 9, 28 ],
+  "borrowingHistory" : [ ],
+  "membershipType" : "BASIC",
+  "currentBorrowedCount" : 0,
+  "membershipDuration" : 0,
+  "active" : true,
+  "role" : "Member",
+  "age" : 25,
+  "fullName" : "efe efe"
+}, {
+  "id" : "MEM_1759056856868_2",
+  "firstName" : "Bob",
+  "lastName" : "Smith",
+  "email" : "bob.smith@example.com",
+  "dateOfBirth" : [ 1992, 7, 22 ],
+  "address" : {
+    "street" : "456 Oak Ave",
+    "city" : "Tartu",
+    "postalCode" : "51014",
+    "country" : "Estonia",
+    "fullAddress" : "456 Oak Ave, Tartu 51014, Estonia"
+  },
+  "membershipDate" : [ 2025, 9, 28 ],
+  "borrowingHistory" : [ ],
+  "membershipType" : "STUDENT",
+  "currentBorrowedCount" : 0,
+  "membershipDuration" : 0,
+  "active" : false,
+  "role" : "Member",
+  "age" : 33,
+  "fullName" : "Bob Smith"
+}, {
+  "id" : "MEM_1759056856856_1",
+  "firstName" : "Alice",
+  "lastName" : "Johnson",
+  "email" : "alice.johnson@example.com",
+  "dateOfBirth" : [ 1985, 3, 15 ],
+  "address" : {
+    "street" : "123 Main St",
+    "city" : "Tallinn",
+    "postalCode" : "10111",
+    "country" : "Estonia",
+    "fullAddress" : "123 Main St, Tallinn 10111, Estonia"
+  },
+  "membershipDate" : [ 2025, 9, 28 ],
+  "borrowingHistory" : [ ],
+  "membershipType" : "PREMIUM",
+  "currentBorrowedCount" : 0,
+  "membershipDuration" : 0,
+  "active" : true,
+  "role" : "Member",
+  "age" : 40,
+  "fullName" : "Alice Johnson"
+} ]

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ee.tak24.library.service.LibraryServiceTest" time="0.863" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/test-classes:/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/classes:/home/ghost/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/ghost/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/ghost/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/ghost/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ghost/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/ghost/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/ghost/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/home/ghost/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/home/ghost/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/home/ghost/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/home/ghost/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ghost/.m2/repository/org/mockito/mockito-junit-jupiter/5.5.0/mockito-junit-jupiter-5.5.0.jar:"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="user.timezone" value="Europe/Tallinn"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk/lib"/>
+    <property name="sun.java.command" value="/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/surefire/surefirebooter-20250928152755301_3.jar /mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/surefire 2025-09-28T15-27-55_234-jvmRun1 surefire-20250928152755301_1tmp surefire_0-20250928152755301_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/test-classes:/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/classes:/home/ghost/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/ghost/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/ghost/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/ghost/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ghost/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/ghost/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/ghost/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/ghost/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/home/ghost/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/home/ghost/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/home/ghost/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/home/ghost/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ghost/.m2/repository/org/mockito/mockito-junit-jupiter/5.5.0/mockito-junit-jupiter-5.5.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ghost"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/surefire/surefirebooter-20250928152755301_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+9"/>
+    <property name="user.name" value="ghost"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.16.9-200.nobara.fc42.x86_64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="(Red_Hat-21.0.8.0.9-1)"/>
+    <property name="localRepository" value="/home/ghost/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&amp;component=java-21-openjdk&amp;version=41"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/tmp/.mount_CursorfghULA/usr/lib/:/tmp/.mount_CursorfghULA/usr/lib32/:/tmp/.mount_CursorfghULA/usr/lib64/:/tmp/.mount_CursorfghULA/lib/:/tmp/.mount_CursorfghULA/lib/i386-linux-gnu/:/tmp/.mount_CursorfghULA/lib/x86_64-linux-gnu/:/tmp/.mount_CursorfghULA/lib/aarch64-linux-gnu/:/tmp/.mount_CursorfghULA/lib32/:/tmp/.mount_CursorfghULA/lib64/::/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="21.0.8+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="getLibraryStatistics_ShouldReturnCorrectStatistics" classname="ee.tak24.library.service.LibraryServiceTest" time="0.805">
+    <system-out><![CDATA[15:27:56,280 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.11
+15:27:56,281 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - No custom configurators were discovered as a service.
+15:27:56,281 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:27:56,282 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:27:56,300 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+15:27:56,301 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+15:27:56,305 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 19 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+15:27:56,305 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:27:56,305 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:27:56,306 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:27:56,307 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/mnt/DATA/Home_Folders/Documents/Code/Vikk/keerulisema-rakenduse-loomine/target/classes/logback.xml]
+15:27:56,353 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:27:56,354 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:27:56,357 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:27:56,370 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+15:27:56,370 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+15:27:56,373 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [maxFileSize] in [ch.qos.logback.core.rolling.TimeBasedRollingPolicy]
+15:27:56,375 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1041638599 - setting totalSizeCap to 1 GB
+15:27:56,376 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1041638599 - No compression will be used
+15:27:56,377 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1041638599 - Will use the pattern logs/library-system.%d{yyyy-MM-dd}.%i.log for the active file
+15:27:56,391 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/library-system.%d{yyyy-MM-dd}.%i.log'.
+15:27:56,391 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+15:27:56,396 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2025-09-28T12:27:56.396Z
+15:27:56,397 |-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [logs/library-system.%d{yyyy-MM-dd}.%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
+15:27:56,397 |-WARN in c.q.l.core.rolling.TimeBasedRollingPolicy@1041638599 - Subcomponent did not start. TimeBasedRollingPolicy will not start.
+15:27:56,397 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:27:56,397 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - TriggeringPolicy has not started. RollingFileAppender will not start
+15:27:56,397 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ERROR_FILE]
+15:27:56,397 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+15:27:56,398 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [maxFileSize] in [ch.qos.logback.core.rolling.TimeBasedRollingPolicy]
+15:27:56,398 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1656318404 - setting totalSizeCap to 500 MB
+15:27:56,399 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1656318404 - No compression will be used
+15:27:56,399 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1656318404 - Will use the pattern logs/library-errors.%d{yyyy-MM-dd}.%i.log for the active file
+15:27:56,399 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/library-errors.%d{yyyy-MM-dd}.%i.log'.
+15:27:56,399 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+15:27:56,399 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2025-09-28T12:27:56.399Z
+15:27:56,399 |-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [logs/library-errors.%d{yyyy-MM-dd}.%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
+15:27:56,399 |-WARN in c.q.l.core.rolling.TimeBasedRollingPolicy@1656318404 - Subcomponent did not start. TimeBasedRollingPolicy will not start.
+15:27:56,399 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:27:56,399 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[ERROR_FILE] - TriggeringPolicy has not started. RollingFileAppender will not start
+15:27:56,399 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_FILE]
+15:27:56,399 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+15:27:56,400 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC_FILE]
+15:27:56,401 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Attaching appender named [FILE] to AsyncAppender.
+15:27:56,402 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Setting discardingThreshold to 0
+15:27:56,403 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ee.tak24.library] to DEBUG
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [ee.tak24.library] to false
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ee.tak24.library]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ee.tak24.library]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ERROR_FILE] to Logger[ee.tak24.library]
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ee.tak24.library.service] to INFO
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [ee.tak24.library.service] to false
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ee.tak24.library.service]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ee.tak24.library.service]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ERROR_FILE] to Logger[ee.tak24.library.service]
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ee.tak24.library.repository] to DEBUG
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [ee.tak24.library.repository] to false
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ee.tak24.library.repository]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ee.tak24.library.repository]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ERROR_FILE] to Logger[ee.tak24.library.repository]
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ee.tak24.library.ui] to INFO
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [ee.tak24.library.ui] to false
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ee.tak24.library.ui]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ee.tak24.library.ui]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ERROR_FILE] to Logger[ee.tak24.library.ui]
+15:27:56,404 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to WARN
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+15:27:56,404 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ERROR_FILE] to Logger[ROOT]
+15:27:56,405 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@dcc6211 - End of configuration.
+15:27:56,405 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@47ec7422 - Registering current configuration as safe fallback point
+15:27:56,405 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4441d567 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 100 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/ghost/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="borrowBook_MemberLimitExceeded_ShouldThrowException" classname="ee.tak24.library.service.LibraryServiceTest" time="0.006">
+    <system-out><![CDATA[15:27:56.429 [main] INFO  e.t.l.service.LibraryServiceImpl - Processing book borrowing - Member: M001, Book: 978-0-123456-78-9
+15:27:56.431 [main] WARN  e.t.l.service.LibraryServiceImpl - Member M001 has reached borrowing limit
+]]></system-out>
+  </testcase>
+  <testcase name="addBook_ValidData_ShouldCreateBook" classname="ee.tak24.library.service.LibraryServiceTest" time="0.006">
+    <system-out><![CDATA[15:27:56.434 [main] INFO  e.t.l.service.LibraryServiceImpl - Adding new book: Test Book by Test Author
+15:27:56.435 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully added book with ISBN: 978-0-123456-78-9
+]]></system-out>
+  </testcase>
+  <testcase name="addBook_DuplicateIsbn_ShouldThrowException" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002">
+    <system-out><![CDATA[15:27:56.441 [main] INFO  e.t.l.service.LibraryServiceImpl - Adding new book: Test Book by Test Author
+15:27:56.441 [main] WARN  e.t.l.service.LibraryServiceImpl - Book with ISBN 978-0-123456-78-9 already exists
+]]></system-out>
+  </testcase>
+  <testcase name="registerMember_ValidData_ShouldCreateMember" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002">
+    <system-out><![CDATA[15:27:56.443 [main] INFO  e.t.l.service.LibraryServiceImpl - Registering new member: John Doe
+15:27:56.443 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully registered member with ID: MEM_1759062476443_1
+]]></system-out>
+  </testcase>
+  <testcase name="removeBook_BookNotBorrowed_ShouldRemoveSuccessfully" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002">
+    <system-out><![CDATA[15:27:56.445 [main] INFO  e.t.l.service.LibraryServiceImpl - Removing book: 978-0-123456-78-9
+15:27:56.446 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully removed book: 978-0-123456-78-9
+]]></system-out>
+  </testcase>
+  <testcase name="findBook_ExistingBook_ShouldReturnBook" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001"/>
+  <testcase name="searchBooks_WithCriteria_ShouldReturnFilteredResults" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002"/>
+  <testcase name="findMember_ExistingMember_ShouldReturnMember" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002"/>
+  <testcase name="returnBook_ValidRequest_ShouldReturnSuccessfully" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002">
+    <system-out><![CDATA[15:27:56.453 [main] INFO  e.t.l.service.LibraryServiceImpl - Processing book return - Member: M001, Book: 978-0-123456-78-9
+15:27:56.454 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully processed return - Record ID: R001
+]]></system-out>
+  </testcase>
+  <testcase name="removeBook_BookCurrentlyBorrowed_ShouldThrowException" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001">
+    <system-out><![CDATA[15:27:56.456 [main] INFO  e.t.l.service.LibraryServiceImpl - Removing book: 978-0-123456-78-9
+15:27:56.456 [main] WARN  e.t.l.service.LibraryServiceImpl - Cannot remove book 978-0-123456-78-9 - it is currently borrowed
+]]></system-out>
+  </testcase>
+  <testcase name="deactivateMember_ExistingMember_ShouldDeactivateSuccessfully" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001">
+    <system-out><![CDATA[15:27:56.458 [main] INFO  e.t.l.service.LibraryServiceImpl - Deactivating member: M001
+15:27:56.458 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully deactivated member: M001
+]]></system-out>
+  </testcase>
+  <testcase name="borrowBook_BookNotFound_ShouldThrowException" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001">
+    <system-out><![CDATA[15:27:56.460 [main] INFO  e.t.l.service.LibraryServiceImpl - Processing book borrowing - Member: M001, Book: 978-0-123456-78-9
+]]></system-out>
+  </testcase>
+  <testcase name="updateMember_ExistingMember_ShouldUpdateSuccessfully" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001">
+    <system-out><![CDATA[15:27:56.461 [main] INFO  e.t.l.service.LibraryServiceImpl - Updating member: M001
+15:27:56.461 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully updated member: M001
+]]></system-out>
+  </testcase>
+  <testcase name="findMember_NonExistingMember_ShouldReturnEmpty" classname="ee.tak24.library.service.LibraryServiceTest" time="0.0"/>
+  <testcase name="borrowBook_ValidRequest_ShouldCreateBorrowingRecord" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001">
+    <system-out><![CDATA[15:27:56.463 [main] INFO  e.t.l.service.LibraryServiceImpl - Processing book borrowing - Member: M001, Book: 978-0-123456-78-9
+15:27:56.464 [main] INFO  e.t.l.service.LibraryServiceImpl - Successfully processed borrowing - Record ID: BORROW_1759062476464_1
+]]></system-out>
+  </testcase>
+  <testcase name="registerMember_InvalidEmail_ShouldThrowException" classname="ee.tak24.library.service.LibraryServiceTest" time="0.001">
+    <system-out><![CDATA[15:27:56.465 [main] INFO  e.t.l.service.LibraryServiceImpl - Registering new member: John Doe
+]]></system-out>
+  </testcase>
+  <testcase name="borrowBook_MemberNotFound_ShouldThrowException" classname="ee.tak24.library.service.LibraryServiceTest" time="0.002">
+    <system-out><![CDATA[15:27:56.467 [main] INFO  e.t.l.service.LibraryServiceImpl - Processing book borrowing - Member: M999, Book: 978-0-123456-78-9
+]]></system-out>
+  </testcase>
+</testsuite>
